@@ -68,10 +68,10 @@ class AuditResponse:
             created=datetime.strftime(datetime.utcnow(), "%H:%M %d %B %Y"),
             num_samples=num_samples,
             num_minutes=num_minutes,
-            accuracy=metrics["accuracy"],
-            f1=metrics["f1"],
-            precision=metrics["precision"],
-            recall=metrics["recall"],
+            accuracy=metrics.get("accuracy"),
+            f1=metrics.get("f1"),
+            precision=metrics.get("precision"),
+            recall=metrics.get("recall"),
             mistakes=mistakes,
         )
 
