@@ -1,0 +1,11 @@
+{
+  "name": "ai-api-auditor",
+  "config": {
+    "runtime": "python37",
+    "python_manager": "pyenv",
+    "cloud_provider": "gcloud",
+    "deployment_type": "run",
+    "entry_function": "main",
+    "deploy_settings": {}
+  }
+}
