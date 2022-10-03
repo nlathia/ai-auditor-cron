@@ -10,7 +10,7 @@ The website with the results is here: https://sentiment-ai-api-audit.herokuapp.c
 
 This cloud run container was created and deployed with the [kettle-cli](https://github.com/nlathia/kettle-cli). It streams the Rotten Tomatoes test set, which is hosted by Hugging Face, and queries Google's sentiment API for each entry. Overall performance metrics are tracked with the Hugging Face [evaluate](https://huggingface.co/docs/evaluate/index) library, and a sample of misclassifications are retained.
 
-The results are `POST`'ed to a Heroku app, where they can be displayed. The repository for that website is open source [in the ai-auditor-web repository](https://github.com/nlathia/ai-auditor-web)
+The results are `POST`'ed to a Heroku app, where they can be displayed. The repository for that website is open source [in the ai-auditor-web repository](https://github.com/nlathia/ai-auditor-web).
 
 
 
