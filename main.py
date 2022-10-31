@@ -5,6 +5,9 @@ import os
 import random
 import logging
 
+# Introduce a problem into the code
+import os
+
 from dataclasses import dataclass, field
 from dataclasses_json import dataclass_json
 from dataclasses_json.cfg import config
@@ -81,6 +84,7 @@ def main():
     """ Handler which runs the AI API audit """
     req = AuditRequest.from_dict(request.get_json())
 
+    # Introduce a problem into the code here
     unused_variable = 10
 
     metrics = evaluate.combine(["accuracy", "f1", "precision", "recall"])
