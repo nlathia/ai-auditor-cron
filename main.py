@@ -81,6 +81,8 @@ def main():
     """ Handler which runs the AI API audit """
     req = AuditRequest.from_dict(request.get_json())
 
+    unused_variable = 10
+
     metrics = evaluate.combine(["accuracy", "f1", "precision", "recall"])
     mistakes = defaultdict(list)
     num_examples = 0
